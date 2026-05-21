@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gallery - A2Z Smart Solutions Limited</title>
+  <title>Services - A2Z Smart Solutions Limited</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -38,26 +38,20 @@
       max-width: 1000px;
       margin: 20px auto;
       padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
     h2 {
       color: #004d40;
-      text-align: center;
+      margin-bottom: 10px;
+    }
+    .service {
       margin-bottom: 20px;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 15px;
-    }
-    .gallery img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-    }
-    .gallery img:hover {
-      transform: scale(1.05);
+      padding: 15px;
+      border-left: 5px solid #ff9800;
+      background: #f1f1f1;
+      border-radius: 5px;
     }
     footer {
       background: #004d40;
@@ -88,13 +82,31 @@
   </nav>
 
   <div class="container">
-    <h2>Our Work Gallery</h2>
-    <div class="gallery">
-      <img src="gallery1.jpg" alt="Catering Event">
-      <img src="gallery2.jpg" alt="Event Decoration">
-      <img src="gallery3.jpg" alt="Handyman Service">
-      <img src="gallery4.jpg" alt="General Maintenance">
-      <img src="gallery5.jpg" alt="Custom Request Project">
+    <h2>Our Services</h2>
+
+    <div class="service">
+      <h3>Catering Services</h3>
+      <p>Delicious and customized catering solutions for events, parties, and corporate functions.</p>
+    </div>
+
+    <div class="service">
+      <h3>Event Decorations</h3>
+      <p>Creative and professional decoration services to make your events memorable.</p>
+    </div>
+
+    <div class="service">
+      <h3>Handyman Services</h3>
+      <p>Reliable handyman support for repairs, installations, and everyday fixes.</p>
+    </div>
+
+    <div class="service">
+      <h3>General Maintenance</h3>
+      <p>Comprehensive maintenance services to keep your home or business running smoothly.</p>
+    </div>
+
+    <div class="service">
+      <h3>Custom Requests</h3>
+      <p>Tailored solutions for unique needs — A2Z covers it all.</p>
     </div>
   </div>
 
