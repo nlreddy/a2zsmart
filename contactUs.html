@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - A2Z Smart Solutions Limited</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+    }
+    header {
+      background: #004d40;
+      color: #fff;
+      padding: 15px 20px;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      background: #00695c;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #004d40;
+      margin-bottom: 10px;
+    }
+    form {
+      margin-bottom: 30px;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background: #ff9800;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #e68900;
+    }
+    footer {
+      background: #004d40;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+    footer a {
+      color: #ff9800;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>A2Z Smart Solutions Limited</h1>
+    <p>Reliable, Efficient, Professional Services</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you! Reach out for bookings, service requests, or general inquiries.</p>
+
+    <h2>Booking Form</h2>
+    <form>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="date">Preferred Date</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="service">Select Service</label>
+      <select id="service" name="service" required>
+        <option value="catering">Catering Services</option>
+        <option value="decorations">Event Decorations</option>
+        <option value="handyman">Handyman Services</option>
+        <option value="maintenance">General Maintenance</option>
+        <option value="custom">Custom Requests</option>
+      </select>
+
+      <button type="submit">Book Now</button>
+    </form>
+
+    <h2>Service Request Form</h2>
+    <form>
+      <label for="request-name">Full Name</label>
+      <input type="text" id="request-name" name="request-name" required>
+
+      <label for="request-email">Email Address</label>
+      <input type="email" id="request-email" name="request-email" required>
+
+      <label for="request-details">Request Details</label>
+      <textarea id="request-details" name="request-details" rows="5" required></textarea>
+
+      <button type="submit">Submit Request</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>Phone: [Add Number] | Email: [Add Email] | Location: [Add Address]</p>
+    <p>Connect with us on 
+      <a href="#">Facebook</a>, 
+      <a href="#">Instagram</a>, 
+      <a href="#">WhatsApp</a>
+    </p>
+  </footer>
+</body>
+</html>
