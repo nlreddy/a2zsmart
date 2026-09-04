@@ -60,6 +60,7 @@
       margin-bottom: 15px;
       border: 1px solid #ccc;
       border-radius: 5px;
+      box-sizing: border-box;
     }
     button {
       background: #ff9800;
@@ -93,12 +94,12 @@
   </header>
 
   <nav>
-	<ul>
-	    <li><a href="index.html">Home</a></li>
-	    <li><a href="services.html">Services</a></li>
-	    <li><a href="gallery.html">Gallery</a></li>
-	    <li><a href="contactUs.html">Contact Us</a></li>
-	  </ul>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contactUs.html">Contact Us</a></li>
+    </ul>
   </nav>
 
   <div class="container">
@@ -106,18 +107,24 @@
     <p>We’d love to hear from you! Reach out for bookings, service requests, or general inquiries.</p>
 
     <h2>Booking Form</h2>
-    <form>
+    <form action="https://formsubmit.co/YOUR_EMAIL@example.com" method="POST">
+      <input type="hidden" name="_subject" value="New Booking Request - A2Z Smart Solutions">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="form_type" value="Booking">
+      <input type="text" name="_honey" style="display:none">
+
       <label for="name">Full Name</label>
-      <input type="text" id="name" name="name" required>
+      <input type="text" id="name" name="full_name" required>
 
       <label for="phone">Phone Number</label>
-      <input type="tel" id="phone" name="phone" required>
+      <input type="tel" id="phone" name="phone_number" required>
 
       <label for="email">Email Address</label>
-      <input type="email" id="email" name="email" required>
+      <input type="email" id="email" name="email_address" required>
 
       <label for="date">Preferred Date</label>
-      <input type="date" id="date" name="date" required>
+      <input type="date" id="date" name="preferred_date" required>
 
       <label for="service">Select Service</label>
       <select id="service" name="service" required>
@@ -132,15 +139,21 @@
     </form>
 
     <h2>Service Request Form</h2>
-    <form>
+    <form action="https://formsubmit.co/laxmareddynerelly@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="New Service Request - A2Z Smart Solutions">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="form_type" value="Service Request">
+      <input type="text" name="_honey" style="display:none">
+
       <label for="request-name">Full Name</label>
-      <input type="text" id="request-name" name="request-name" required>
+      <input type="text" id="request-name" name="full_name" required>
 
       <label for="request-email">Email Address</label>
-      <input type="email" id="request-email" name="request-email" required>
+      <input type="email" id="request-email" name="email_address" required>
 
       <label for="request-details">Request Details</label>
-      <textarea id="request-details" name="request-details" rows="5" required></textarea>
+      <textarea id="request-details" name="request_details" rows="5" required></textarea>
 
       <button type="submit">Submit Request</button>
     </form>
@@ -148,9 +161,9 @@
 
   <footer>
     <p>Phone: [Add Number] | Email: [Add Email] | Location: [Add Address]</p>
-    <p>Connect with us on 
-      <a href="#">Facebook</a>, 
-      <a href="#">Instagram</a>, 
+    <p>Connect with us on
+      <a href="#">Facebook</a>,
+      <a href="#">Instagram</a>,
       <a href="#">WhatsApp</a>
     </p>
   </footer>
