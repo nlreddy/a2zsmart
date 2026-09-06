@@ -49,15 +49,30 @@
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
       gap: 15px;
     }
-    .gallery img {
-      width: 100%;
-      height: auto;
+    .gallery-item {
+      margin: 0;
+      background: #fff;
       border-radius: 8px;
+      overflow: hidden;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
       transition: transform 0.3s ease;
     }
-    .gallery img:hover {
+    .gallery-item:hover img {
       transform: scale(1.05);
+    }
+    .gallery-item figcaption {
+      padding: 10px 12px;
+      text-align: center;
+      font-weight: bold;
+      color: #004d40;
+      background: #f4f8f7;
+      font-size: 0.95rem;
     }
     footer {
       background: #004d40;
@@ -79,31 +94,87 @@
   </header>
 
   <nav>
-	<ul>
-	    <li><a href="index.html">Home</a></li>
-	    <li><a href="services.html">Services</a></li>
-	    <li><a href="gallery.html">Gallery</a></li>
-	    <li><a href="contactUs.html">Contact Us</a></li>
-	  </ul>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contactUs.html">Contact Us</a></li>
+    </ul>
   </nav>
 
   <div class="container">
     <h2>Our Work Gallery</h2>
     <div class="gallery">
-      <img src="gallery1.jpg" alt="Catering Event">
-      <img src="gallery2.jpg" alt="Event Decoration">
-      <img src="gallery3.jpg" alt="Handyman Service">
-      <img src="gallery4.jpg" alt="General Maintenance">
-      <img src="gallery5.jpg" alt="Custom Request Project">
+      <figure class="gallery-item">
+        <img
+          src="https://images.pexels.com/photos/587741/pexels-photo-587741.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt="Professional Catering Setup"
+          title="Professional Catering Setup"
+          loading="lazy"
+          onerror="this.onerror=null;this.src='https://placehold.co/800x600?text=Professional+Catering+Setup';"
+        >
+        <figcaption>Professional Catering Setup</figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img
+          src="https://images.pexels.com/photos/169190/pexels-photo-169190.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt="Elegant Event Decoration"
+          title="Elegant Event Decoration"
+          loading="lazy"
+          onerror="this.onerror=null;this.src='https://placehold.co/800x600?text=Elegant+Event+Decoration';"
+        >
+        <figcaption>Elegant Event Decoration</figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img
+          src="https://images.pexels.com/photos/5691659/pexels-photo-5691659.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt="Expert Handyman Service"
+          title="Expert Handyman Service"
+          loading="lazy"
+          onerror="this.onerror=null;this.src='https://placehold.co/800x600?text=Expert+Handyman+Service';"
+        >
+        <figcaption>Expert Handyman Service</figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img
+          src="https://images.pexels.com/photos/4108711/pexels-photo-4108711.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt="General Home Maintenance"
+          title="General Home Maintenance"
+          loading="lazy"
+          onerror="this.onerror=null;this.src='https://placehold.co/800x600?text=General+Home+Maintenance';"
+        >
+        <figcaption>General Home Maintenance</figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img
+          src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt="Custom Business Support Solutions"
+          title="Custom Business Support Solutions"
+          loading="lazy"
+          onerror="this.onerror=null;this.src='https://placehold.co/800x600?text=Custom+Business+Support+Solutions';"
+        >
+        <figcaption>Custom Business Support Solutions</figcaption>
+      </figure>
     </div>
   </div>
 
   <footer>
-    <p>Phone: [Add Number] | Email: [Add Email] | Location: [Add Address]</p>
-    <p>Connect with us on 
-      <a href="#">Facebook</a>, 
-      <a href="#">Instagram</a>, 
-      <a href="#">WhatsApp</a>
+    <p>Connect with us on </p>
+    <p>
+      Phone: [ +353 89 981 8261] | Email: [a2zsmartsolutionltd@gmail.com] | Location: [Unit 7 & 8
+      Abington
+      Murroe
+      Limerick
+      V94T1KW]
+    </p>
+    <p>
+      <!--   <a href="a2z#">Facebook</a>,
+      <a href="#">Instagram</a>,
+      <a href="#">WhatsApp</a>-->
     </p>
   </footer>
 </body>
